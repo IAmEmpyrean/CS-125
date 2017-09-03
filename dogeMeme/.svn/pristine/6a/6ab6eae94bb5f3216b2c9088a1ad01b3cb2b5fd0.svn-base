@@ -1,0 +1,33 @@
+package dogeMeme;
+import com.sun.speech.freetts.*;
+
+/* Made thanks to open source FreeTTS library.
+ * Created by Andrew Obrzut
+ * aobrzut2@illinois.edu
+ */
+
+public class lab0 {
+	private static final String VOICENAME = "kevin16";
+	public static void main(String[] args) {
+		Voice voice;
+		VoiceManager vm = VoiceManager.getInstance();
+		voice = vm.getVoice(VOICENAME);
+		
+		voice.allocate();
+		
+		try {
+			voice.speak("Hello World");
+			voice.speak("Dank memes make for sweet dreams");
+		} catch(Exception e) {}
+	}
+	
+	
+	
+
+}
+
+
+  class doges{
+	  int numOfDoges;
+	  int numOfMemes;
+  }
